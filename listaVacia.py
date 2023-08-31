@@ -1,27 +1,24 @@
-#Crear una lista vacia en la cual se vayan agregando 10 valores numericos de manera aleatoria
-#Luego imprimir la lista, excepto el valor que se encuentra en la posición 3 y comentar cada paso
-
-#Importar librerias
+# Importar la librería random, que nos permitirá generar números aleatorios
 import random
 
-#Crear lista vacia
+# Crear una lista vacía donde se almacenarán los valores numéricos
 lista = []
 
-#Crear ciclo for para agregar 10 valores numericos de manera aleatoria
+# Utilizar un ciclo for para agregar 10 valores numéricos aleatorios a la lista
 for i in range(10):
-    lista.append(random.randint(1, 100))
+    # Generar un número aleatorio entre 1 y 100 y agregarlo a la lista
+    numero_aleatorio = random.randint(1, 100)
+    lista.append(numero_aleatorio)
     
-#Imprimir lista
-print(lista)
+# Imprimir la lista completa con los 10 valores generados aleatoriamente
+print("Lista completa:", lista)
 
-#Imprimir valor en la posición 3
-print(lista[3])
+# Imprimir el valor en la posición 3 de la lista (cuarta posición en términos humanos)
+valor_posicion_3 = lista[3]
+print("Valor en la posición 3:", valor_posicion_3)
 
-#Eliminar valor en la posición 3
+# Eliminar el valor en la posición 3 de la lista
 del lista[3]
 
-#Imprimir lista
-print(lista)
-
-
-
+# Imprimir la lista nuevamente, esta vez con solo 9 valores después de haber eliminado uno
+print("Lista después de eliminar el valor en la posición 3:", lista)
