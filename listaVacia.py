@@ -4,6 +4,9 @@ import random
 # Creamos una lista vacia
 lista = []
 
+# Imprimimos el valor que se encuentra en la posicion 3 de la lista
+print("Valor en la posición 3 de la lista:", lista[3])
+
 # Creamos un ciclo for para que se repita 10 veces
 for i in range(10):
     # Agregamos a la lista un valor numerico aleatorio entre 1 y 100
