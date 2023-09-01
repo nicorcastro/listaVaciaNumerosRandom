@@ -1,24 +1,18 @@
-# Importar la librería random, que nos permitirá generar números aleatorios
+# Importamos la libreria random
 import random
 
-# Crear una lista vacía donde se almacenarán los valores numéricos
+# Creamos una lista vacia
 lista = []
 
-# Utilizar un ciclo for para agregar 10 valores numéricos aleatorios a la lista
+# Creamos un ciclo for para que se repita 10 veces
 for i in range(10):
-    # Generar un número aleatorio entre 1 y 100 y agregarlo a la lista
-    numeroAleatorio = random.randint(1, 100)
-    lista.append(numeroAleatorio)
-    
-# Imprimir la lista completa con los 10 valores generados aleatoriamente
-print("Lista completa:", lista)
+    # Agregamos a la lista un valor numerico aleatorio entre 1 y 100
+    numeroAleatorio = random.randint(1, 100)  # Generamos un número aleatorio entre 1 y 100
+    lista.append(numeroAleatorio)  # Agregamos el número aleatorio a la lista
 
-# Imprimir el valor en la posición 3 de la lista (cuarta posición en términos humanos)
-valorPosicionTres = lista[3]
-print("Valor en la posición 3:", valorPosicionTres)
-
-# Eliminar el valor en la posición 3 de la lista
-del lista[3]
-
-# Imprimir la lista nuevamente, esta vez con solo 9 valores después de haber eliminado uno
-print("Lista después de eliminar el valor en la posición 3:", lista)
+# Imprimimos la lista sin el valor que se encuentra en la posicion 3 y diciendo que posición ocupa cada numero
+for i in range(len(lista)): # Creamos un ciclo for para que se repita la longitud que tiene la lista
+    if i != 3:  # Excluimos la posición 3 de la lista para que no se imprima
+        posicion_actual = i  # Guardamos el valor actual de 'i' como la posición actual en la lista
+        valorActual = lista[i]  # Obtenemos el valor actual en la lista
+        print("Posicion", posicion_actual, ":", valorActual)  # Imprimimos la posición y el valor en esa posición
