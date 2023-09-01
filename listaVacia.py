@@ -7,15 +7,15 @@ lista = []
 # Utilizar un ciclo for para agregar 10 valores numéricos aleatorios a la lista
 for i in range(10):
     # Generar un número aleatorio entre 1 y 100 y agregarlo a la lista
-    numero_aleatorio = random.randint(1, 100)
-    lista.append(numero_aleatorio)
+    numeroAleatorio = random.randint(1, 100)
+    lista.append(numeroAleatorio)
     
 # Imprimir la lista completa con los 10 valores generados aleatoriamente
 print("Lista completa:", lista)
 
 # Imprimir el valor en la posición 3 de la lista (cuarta posición en términos humanos)
-valor_posicion_3 = lista[3]
-print("Valor en la posición 3:", valor_posicion_3)
+valorPosicionTres = lista[3]
+print("Valor en la posición 3:", valorPosicionTres)
 
 # Eliminar el valor en la posición 3 de la lista
 del lista[3]
